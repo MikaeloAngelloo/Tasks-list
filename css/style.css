@@ -5,3 +5,8 @@ html {
 *, ::after, ::before {
     box-sizing: inherit;
 }
+
+.body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'inter', sans-serif;
+}
