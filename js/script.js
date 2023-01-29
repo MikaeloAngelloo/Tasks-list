@@ -1,14 +1,6 @@
 {
-    const tasks = [
-      {
-        content: "pierwsze zadanie",
-        done: false,
-      },
-      {
-        content: "drugie zadanie",
-        done: true,
-      },
-    ];
+    const tasks = [];
+     
   
     const addNewTask = (newTaskContent) => {
       tasks.push({
@@ -32,7 +24,7 @@
       const removeButtons = document.querySelectorAll(".js-remove");
 
       removeButtons.forEach((removeButton, index) => {
-        removeButton.addEventListener("click", () =>{
+        removeButton.addEventListener("click", () => {
          removeTask(index);
         });
       });
@@ -51,7 +43,7 @@
   
       for (const task of tasks) {
           htmlString += `
-          <li ${task.done ? " style=\"text-decoration: line-through\"" : ""}
+          <li  ${task.done ? " \✔️\"" : ""}
           >
           
           <button class="js-done">zrobione?</button>
