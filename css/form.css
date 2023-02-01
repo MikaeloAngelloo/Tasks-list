@@ -9,6 +9,7 @@
     background: teal;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .form__button:hover {
