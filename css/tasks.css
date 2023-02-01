@@ -25,23 +25,27 @@
     text-decoration: line-through;
 
 }
+
 .tasks__button--toggleDone {
     background: rgb(7, 146, 7);
 }
 
-.tasks__button--toggleDone:hover{
+.tasks__button--toggleDone:hover {
     background: rgb(0, 161, 0);
 }
 
 .tasks__button--toggleDone:active {
     background: rgb(0, 214, 0);
 }
+
 .tasks__button--remove {
     background: red;
 }
+
 .tasks__button--remove:hover {
     background: rgb(253, 60, 60);
 }
+
 .tasks__button--remove:active {
     background: rgb(241, 118, 118);
 }
