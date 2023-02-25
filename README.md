@@ -1,7 +1,7 @@
 # Welcome on my tasks-lists
 Hello, check out my new demo. [Click here](https://mikaeloangelloo.github.io/Tasks-list/)
 
-![gif](images/listazadan.gif)
+![gif](images/task2.gif)
 
 # Description
 Task-list is about planning our activities during the day
