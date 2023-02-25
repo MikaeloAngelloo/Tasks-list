@@ -23,10 +23,7 @@
   };
 
   const removeTask = (taskIndex) => {
-    tasks = [
-      ...tasks.slice(0, taskIndex),
-       ...tasks.slice(taskIndex + 1)
-      ];
+    tasks = [...tasks.slice(0, taskIndex), ...tasks.slice(taskIndex + 1)];
     render();
   };
 
@@ -45,7 +42,7 @@
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
 
-    removeButtons.forEach ((removeButton, taskindex) => {
+    removeButtons.forEach((removeButton, taskindex) => {
       removeButton.addEventListener("click", () => {
         removeTask(taskindex);
       });
@@ -65,7 +62,8 @@
     const taskToHTML = (task) => `
 
           <li class ="
-          tasks__item ${task.done && hideDoneTasks ? "tasks__item--hidden" : ""
+          tasks__item ${
+            task.done && hideDoneTasks ? "tasks__item--hidden" : ""
           } js-task">
           <button class="tasks__button tasks__button--toggleDone js-done"> ${
             task.done ? "✔️" : ""
@@ -78,8 +76,8 @@
           </li>
         `;
 
-     const tasksElement = document.querySelector(".js-tasks");
-        tasksElement.innerHTML = tasks.map(taskToHTML).join("");
+    const tasksElement = document.querySelector(".js-tasks");
+    tasksElement.innerHTML = tasks.map(taskToHTML).join("");
   };
 
   const renderButtons = () => {
