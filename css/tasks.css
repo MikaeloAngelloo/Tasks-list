@@ -21,6 +21,9 @@
     
     cursor: pointer;
 }
+.tasks__item--hidden {
+    display: none;
+}
 
 .tasks__content--done {
     text-decoration: line-through;
@@ -33,6 +36,7 @@
 
 .tasks__button--toggleDone:hover {
     background: rgb(0, 161, 0);
+    transition: 1s;
 }
 
 .tasks__button--toggleDone:active {
@@ -45,6 +49,7 @@
 
 .tasks__button--remove:hover {
     background: rgb(253, 60, 60);
+    transition: 1s;
 }
 
 .tasks__button--remove:active {

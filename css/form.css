@@ -10,12 +10,13 @@
     color: white;
     border: none;
     cursor: pointer;
-    
+    transition: 1s;
     
 }
 
 .form__button:hover {
     background: rgb(1, 196, 196);
+    transform: scale(1.15);
 }
 
 .form__button:active {
